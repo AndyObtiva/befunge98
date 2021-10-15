@@ -1,3 +1,4 @@
+require 'fileutils'
 require_relative '../model/model_attribute_update_string_io'
 
 class Befunge98GuiGlimmerDslSwt
@@ -8,6 +9,7 @@ class Befunge98GuiGlimmerDslSwt
       COLUMN_COUNT = 30
       ROW_COUNT = 12
       LAST_PROGRAM = File.expand_path(File.join(Dir.home, '.befunge98'), __dir__)
+      FileUtils.touch(LAST_PROGRAM)
       
       attr_accessor :input_cells, :output_string, :input_string
     

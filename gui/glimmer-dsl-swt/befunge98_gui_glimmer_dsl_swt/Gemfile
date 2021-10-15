@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem 'glimmer-dsl-swt', '~> 4.21.0.1'
+gem 'glimmer-dsl-swt', '~> 4.21.1.0'
 gem 'befunge98', '0.0.2'
 
 group :development do
